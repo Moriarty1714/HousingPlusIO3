@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=720 height=1280></canvas>
+      <canvas id="unity-canvas" width=720 height=980></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -27,11 +27,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Housing+Tests.loader.js";
+      var loaderUrl = buildUrl + "/Housing+.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Housing+Tests.data",
-        frameworkUrl: buildUrl + "/Housing+Tests.framework.js",
-        codeUrl: buildUrl + "/Housing+Tests.wasm",
+        dataUrl: buildUrl + "/Housing+.data",
+        frameworkUrl: buildUrl + "/Housing+.framework.js",
+        codeUrl: buildUrl + "/Housing+.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "LudensProjects",
         productName: "Housing+",
@@ -63,7 +63,7 @@
         }, 5000);
       } else {
         canvas.style.width = "720px";
-        canvas.style.height = "1280px";
+        canvas.style.height = "980px";
       }
       loadingBar.style.display = "block";
 
